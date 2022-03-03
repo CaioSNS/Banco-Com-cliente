@@ -1,0 +1,23 @@
+
+public class TestaBanco {
+	public static void main(String[] args) {
+		Cliente caio = new Cliente();
+		caio.nome = "Caio Sakaguti";
+		caio.cpf = "xxxxxxxxxxx";
+		caio.profissao = "programador";
+		
+		Conta contaDoCaio = new Conta();
+		contaDoCaio.deposita(100);
+		System.out.println(contaDoCaio.saldo);
+		
+		contaDoCaio.titular = caio;
+		System.out.println(contaDoCaio.titular.nome);
+		System.out.println(contaDoCaio.titular);
+		System.out.println(caio);
+
+
+		
+		
+	}
+
+}
