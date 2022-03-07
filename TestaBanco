@@ -8,7 +8,7 @@ public class TestaBanco {
 		
 		Conta contaDoCaio = new Conta();
 		contaDoCaio.deposita(100);
-		System.out.println(contaDoCaio.saldo);
+		System.out.println(contaDoCaio.pegaSaldo());
 		
 		contaDoCaio.titular = caio;
 		System.out.println(contaDoCaio.titular.nome);
@@ -21,3 +21,4 @@ public class TestaBanco {
 	}
 
 }
+
